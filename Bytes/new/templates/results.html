@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bytes</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/bootstrap.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+</head>
+
+<body>
+    <a href="top">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img class="icon" src="{{url_for('static', filename='img/icon.png')}}"></img>
+                    </a>
+                    <p class="navbar-text">Bytes</p>
+                </div>
+            </div>
+        </nav>
+    </a>
+    <!-- <div class="container" style="padding-top:60px"> -->
+    <div class="jumbotron text-center" id="top" style="background-image: url({{url_for('static', filename='img/food.jpg')}}); background-size:cover;">
+        <div class="container">
+            <h1>It's simple.</h1>
+            <p>Just enter your location and we'll find the best deals in your area.</p>
+            <form action="search.html" method="GET">
+                <input type="text" name="address" placeholder="Time to eat!" id="add">
+                <input type="button" value="Go!" class="btn btn-default btn-lg" id="add_but" onclick="search()" />
+            </form>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{url_for('static', filename='js/bootstrap.js')}}"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='js/yelp.js')}}"></script>
+
+<div class="container">
+						<div class="row">
+	            			<div class="col-sm-11">
+	                		<h3>Edison, Middlesex County, New Jersey, United States of America</h3>
+	                		</div>
+            			</div>
+            		</div>
+<div class="container">
+			<a href="https://www.yelp.com/biz/red-onion-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/MwhrZwJSWrqdazOHvAR82g/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Red Onion</h2>
+	                <h4>0.31 miles</h4>
+	                <h4>260 Talmadge Rd</h4>
+	                <h4>+17322870202</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>136 reviews</h4>
+	                <h2>$$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>F</h1>
+	                <h3>Terrible!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/crazy-4-falafel-edison-3?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/PYiKOVpjXGkOnyvva0Uclw/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Crazy 4 Falafel</h2>
+	                <h4>0.31 miles</h4>
+	                <h4>260 Talmadge Rd</h4>
+	                <h4>+17322439345</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>208 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>A</h1>
+	                <h3>Great!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/super-duper-deli-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/1e2LPdItoBZhBxHdHgBTYg/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Super Duper Deli</h2>
+	                <h4>0.26 miles</h4>
+	                <h4>257 Talmadge Rd</h4>
+	                <h4>+17322879666</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>15 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>A</h1>
+	                <h3>Great!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/grill-n-fill-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/JSU-mga-lIJAvzXdVYRuzA/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Grill N Fill</h2>
+	                <h4>0.34 miles</h4>
+	                <h4>120 Talmadge Rd</h4>
+	                <h4>+17322878788</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>3.5/5</h2>
+	                <h4>19 reviews</h4>
+	                <h2>$$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>A</h1>
+	                <h3>Great!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/godavari-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media3.fl.yelpcdn.com/bphoto/Q3UDXE1uYM40BtyFKcrwSg/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Godavari</h2>
+	                <h4>0.33 miles</h4>
+	                <h4>128 Talmadge Rd</h4>
+	                <h4>+17322870570</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>2.5/5</h2>
+	                <h4>38 reviews</h4>
+	                <h2>$$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/pho-viet-anh-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media3.fl.yelpcdn.com/bphoto/OgmgSpVitxpgLHkxNgB5sQ/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Pho Viet Anh</h2>
+	                <h4>0.47 miles</h4>
+	                <h4>136 Talmadge Rd</h4>
+	                <h4>+17326621911</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>3.0/5</h2>
+	                <h4>75 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/francos-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/MQ-PtrpAEdSxP1-ujiHNNg/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Franco's</h2>
+	                <h4>0.21 miles</h4>
+	                <h4>170 Talmadge Rd</h4>
+	                <h4>+17322482484</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>3.5/5</h2>
+	                <h4>29 reviews</h4>
+	                <h2>$$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/quick-chek-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/TZy7beiebVtRPSGGgk_0rw/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Quick Chek</h2>
+	                <h4>0.34 miles</h4>
+	                <h4>266 Talmadge Rd</h4>
+	                <h4>+17322879664</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>10 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/panatieri-pizza-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media1.fl.yelpcdn.com/bphoto/6RIqJBiTv27ILeLVPboOjw/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Panatieri Pizza</h2>
+	                <h4>0.27 miles</h4>
+	                <h4>249 Talmadge Rd</h4>
+	                <h4>+17322489650</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>3.5/5</h2>
+	                <h4>28 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/palermo-pizza-and-grill-edison-3?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media2.fl.yelpcdn.com/bphoto/UeDsNUr3TrfplNyo9uYmkA/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Palermo Pizza and Grill</h2>
+	                <h4>0.49 miles</h4>
+	                <h4>124 Talmadge Rd</h4>
+	                <h4>+17322439838</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>3.0/5</h2>
+	                <h4>5 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>B</h1>
+	                <h3>Good!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/subway-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/74f2Op_t98bA_pS6s-5ihw/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Subway</h2>
+	                <h4>0.32 miles</h4>
+	                <h4>138 Talmadge Rd</h4>
+	                <h4>+17326625015</h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>2 reviews</h4>
+	                <h2>$$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>D</h1>
+	                <h3>Bad!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a><div class="container">
+			<a href="https://www.yelp.com/biz/snack-shack-edison?adjust_creative=XRYdDW2W0jN3S5ZDt6v1qA&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=XRYdDW2W0jN3S5ZDt6v1qA" target="_blank">
+			<div class="jumbotron" id="result">
+			<div class="block" style="background-image: url(https://s3-media4.fl.yelpcdn.com/bphoto/NEuIFrNsHotA7SlYwJuGMw/o.jpg); background-size:cover;"></div>
+	        <div class="row">
+	            <div class="col-sm-8">
+	                <h2>Snack Shack</h2>
+	                <h4>0.75 miles</h4>
+	                <h4>100 Municipal Blvd</h4>
+	                <h4></h4>
+	            </div>
+	            <div class="col-sm-2">
+	                <h2>4.0/5</h2>
+	                <h4>1 reviews</h4>
+	                <h2>$</h2>
+	            </div>
+	            <div class="col-sm-1 col-sm-offset-1">
+	                <h1>C</h1>
+	                <h3>Average!</h3>
+	            </div>
+	        </div>
+	        </div>
+	    </div>
+
+	    </a></body>
+<html>
